@@ -1,0 +1,13 @@
+# Mengabaikan folder Git saat proses Docker build
+.git
+
+# Mengabaikan file konfigurasi lokal editor
+.vscode
+.idea
+
+# Mengabaikan file sistem operasi
+.DS_Store
+Thumbs.db
+
+# Mengabaikan dokumentasi yang tidak wajib masuk image runtime
+README.md

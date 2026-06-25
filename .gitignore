@@ -1,0 +1,13 @@
+# Mengabaikan folder dependency jika project dikembangkan lebih lanjut
+node_modules/
+
+# Mengabaikan file konfigurasi lokal editor
+.vscode/
+.idea/
+
+# Mengabaikan file sistem operasi
+.DS_Store
+Thumbs.db
+
+# Mengabaikan file environment lokal
+.env

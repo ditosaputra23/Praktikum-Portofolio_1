@@ -1,0 +1,361 @@
+/* Mengatur variabel warna utama agar mudah digunakan ulang */
+:root {
+    --primary-color: #2563EB;
+    --white-color: #FFFFFF;
+    --light-gray: #F5F5F5;
+    --text-color: #1F2937;
+    --muted-color: #6B7280;
+    --border-color: #E5E7EB;
+    --shadow: 0 18px 45px rgba(37, 99, 235, 0.12);
+}
+
+/* Reset dasar untuk menjaga tampilan konsisten di berbagai browser */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mengaktifkan scroll halus ketika menu navigasi diklik */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Style dasar body menggunakan pendekatan mobile first */
+body {
+    background-color: var(--white-color);
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* Mengatur gambar agar responsif jika nanti folder images digunakan */
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Style dasar link agar mengikuti warna teks induknya */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Container membatasi lebar konten dan memberi jarak sisi */
+.container {
+    width: min(100% - 32px, 1120px);
+    margin-inline: auto;
+}
+
+/* Section memberi jarak vertikal yang konsisten antar bagian */
+.section {
+    padding: 72px 0;
+}
+
+/* Label kecil untuk judul section */
+.section-label,
+.eyebrow {
+    color: var(--primary-color);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+/* Style heading utama section */
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(2.4rem, 10vw, 4.75rem);
+    max-width: 760px;
+}
+
+h2 {
+    font-size: clamp(1.75rem, 6vw, 3rem);
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+}
+
+/* Header sticky agar navigasi tetap mudah diakses */
+.site-header {
+    background-color: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* Navbar menggunakan Flexbox dan mobile first */
+.navbar {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 18px 0;
+}
+
+/* Logo website */
+.logo {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+/* Menu navigasi dibuat fleksibel dan bisa turun baris di layar kecil */
+.nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    justify-content: center;
+    list-style: none;
+}
+
+/* Link navigasi dengan area klik nyaman */
+.nav-menu a {
+    color: var(--muted-color);
+    display: inline-block;
+    font-size: 0.95rem;
+    font-weight: 700;
+    padding: 4px 0;
+}
+
+/* Efek hover dan focus untuk aksesibilitas */
+.nav-menu a:hover,
+.nav-menu a:focus {
+    color: var(--primary-color);
+}
+
+/* Hero section dengan latar abu muda */
+.hero {
+    background: linear-gradient(180deg, var(--light-gray) 0%, var(--white-color) 100%);
+    padding-top: 64px;
+}
+
+/* Konten hero menggunakan Grid agar mudah responsif */
+.hero-content {
+    align-items: center;
+    display: grid;
+    gap: 36px;
+}
+
+/* Paragraf hero dibuat lebih lebar dan nyaman dibaca */
+.hero-text p {
+    color: var(--muted-color);
+    margin: 20px 0 28px;
+    max-width: 680px;
+}
+
+/* Tombol utama menggunakan warna biru brand */
+.btn-primary,
+.btn-secondary {
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: 800;
+    padding: 14px 22px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+/* Kartu visual hero sebagai aksen desain */
+.hero-card {
+    background-color: var(--white-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    padding: 28px;
+}
+
+.hero-card .card-label {
+    color: var(--primary-color);
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.hero-card p {
+    color: var(--muted-color);
+    margin-top: 12px;
+}
+
+/* Workflow visual di hero menggunakan Flexbox */
+.workflow-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 26px;
+}
+
+.workflow-list span {
+    background-color: var(--light-gray);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--primary-color);
+    font-size: 0.85rem;
+    font-weight: 800;
+    padding: 10px 12px;
+}
+
+/* About section menggunakan Grid untuk memisahkan judul dan deskripsi */
+.about {
+    background-color: var(--white-color);
+}
+
+.about-grid {
+    display: grid;
+    gap: 28px;
+}
+
+.about-text p {
+    color: var(--muted-color);
+    margin-bottom: 16px;
+}
+
+/* Skills section diberi background abu muda */
+.skills {
+    background-color: var(--light-gray);
+}
+
+/* Grid skill mobile first dengan satu kolom */
+.skills-grid {
+    display: grid;
+    gap: 16px;
+    margin-top: 28px;
+}
+
+/* Kartu skill dibuat sederhana dan mudah dipindai */
+.skill-card {
+    background-color: var(--white-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 22px;
+}
+
+.skill-card p {
+    color: var(--muted-color);
+}
+
+/* Portfolio projects menggunakan background putih */
+.projects {
+    background-color: var(--white-color);
+}
+
+/* Grid project mobile first */
+.project-grid {
+    display: grid;
+    gap: 18px;
+    margin-top: 28px;
+}
+
+/* Kartu project berisi nomor, judul, deskripsi, dan teknologi */
+.project-card {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 24px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    box-shadow: var(--shadow);
+    transform: translateY(-4px);
+}
+
+.project-number {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+.project-card p {
+    color: var(--muted-color);
+    margin-bottom: 18px;
+}
+
+.project-card span {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+/* Contact section menonjolkan ajakan dengan background biru */
+.contact {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.contact-box {
+    max-width: 760px;
+    text-align: center;
+}
+
+.contact .section-label,
+.contact p {
+    color: rgba(255, 255, 255, 0.86);
+}
+
+.contact p {
+    margin-bottom: 28px;
+}
+
+/* Tombol sekunder untuk area background biru */
+.btn-secondary {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+
+/* Footer sederhana sebagai penutup halaman */
+.site-footer {
+    background-color: var(--text-color);
+    color: var(--white-color);
+    padding: 24px 0;
+    text-align: center;
+}
+
+.site-footer p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.92rem;
+}
+
+/* Breakpoint tablet untuk layout dua kolom */
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero-content {
+        grid-template-columns: 1.4fr 0.8fr;
+    }
+
+    .about-grid {
+        grid-template-columns: 0.9fr 1.1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Breakpoint desktop untuk grid skill tiga kolom */
+@media (min-width: 1024px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

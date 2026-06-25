@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Metadata dasar dokumen HTML5 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website portofolio modern untuk pembelajaran HTML, CSS, Cloud Computing, dan DevOps Fundamentals.">
+    <title>Portfolio Website | Cloud & DevOps Student</title>
+
+    <!-- Menghubungkan file CSS eksternal -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header berisi identitas website dan navigasi utama -->
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Navigasi utama">
+            <!-- Logo atau nama pemilik portofolio -->
+            <a href="#home" class="logo">CloudPortfolio</a>
+
+            <!-- Daftar menu navigasi internal halaman -->
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Konten utama website -->
+    <main>
+        <!-- Hero section sebagai area perkenalan pertama -->
+        <section id="home" class="hero section">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <p class="eyebrow">Cloud Computing & DevOps Fundamentals</p>
+                    <h1>Halo, saya Mahasiswa Web Developer.</h1>
+                    <p>
+                        Saya membangun website modern, responsif, dan siap dipublikasikan
+                        menggunakan HTML5, CSS3, Git, GitHub, Linux, dan Docker.
+                    </p>
+                    <a href="#projects" class="btn-primary">Lihat Project</a>
+                </div>
+
+                <!-- Kartu visual sederhana berbasis HTML dan CSS agar project langsung berjalan -->
+                <div class="hero-card" aria-label="Ringkasan kemampuan">
+                    <span class="card-label">Learning Path</span>
+                    <h2>Web + Cloud + DevOps</h2>
+                    <p>Build, version, containerize, and deploy.</p>
+
+                    <!-- Elemen dekoratif yang menyerupai workflow DevOps -->
+                    <div class="workflow-list">
+                        <span>Code</span>
+                        <span>Git</span>
+                        <span>Docker</span>
+                        <span>Deploy</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About section untuk menjelaskan profil singkat -->
+        <section id="about" class="about section">
+            <div class="container about-grid">
+                <div>
+                    <p class="section-label">About Me</p>
+                    <h2>Membangun fondasi web yang rapi dan mudah dikembangkan.</h2>
+                </div>
+                <div class="about-text">
+                    <p>
+                        Website ini dibuat sebagai contoh project portofolio untuk mahasiswa
+                        yang sedang mempelajari pengembangan web modern, Cloud Computing,
+                        dan DevOps Fundamentals.
+                    </p>
+                    <p>
+                        Fokus utama project ini adalah struktur HTML semantic, styling CSS
+                        yang bersih, responsive design, serta alur kerja Git, GitHub, Docker,
+                        dan deployment sederhana melalui GitHub Pages.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills section menampilkan teknologi yang dipelajari -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <p class="section-label">Skills</p>
+                <h2>Teknologi yang Digunakan</h2>
+
+                <!-- Grid skill menggunakan CSS Grid -->
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <h3>HTML</h3>
+                        <p>Membuat struktur halaman semantic dan mudah dibaca.</p>
+                    </article>
+                    <article class="skill-card">
+                        <h3>CSS</h3>
+                        <p>Mendesain tampilan modern, responsif, dan konsisten.</p>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Git</h3>
+                        <p>Mengelola riwayat perubahan source code secara terstruktur.</p>
+                    </article>
+                    <article class="skill-card">
+                        <h3>GitHub</h3>
+                        <p>Menyimpan repository dan berkolaborasi secara online.</p>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Linux</h3>
+                        <p>Menggunakan command line untuk workflow server dan DevOps.</p>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Docker</h3>
+                        <p>Menjalankan aplikasi web dalam container yang konsisten.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio section berisi tiga contoh project -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <p class="section-label">Portfolio</p>
+                <h2>Contoh Project</h2>
+
+                <!-- Grid project menggunakan CSS Grid -->
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-number">01</div>
+                        <h3>Static Portfolio Website</h3>
+                        <p>
+                            Website personal berbasis HTML dan CSS yang dapat dipublikasikan
+                            melalui GitHub Pages.
+                        </p>
+                        <span>HTML • CSS • GitHub Pages</span>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-number">02</div>
+                        <h3>Dockerized Web App</h3>
+                        <p>
+                            Project website statis yang dijalankan menggunakan Nginx di dalam
+                            Docker container.
+                        </p>
+                        <span>Docker • Nginx • Linux</span>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-number">03</div>
+                        <h3>DevOps Documentation</h3>
+                        <p>
+                            Dokumentasi alur kerja Git, GitHub, Docker build, Docker run,
+                            dan deployment.
+                        </p>
+                        <span>Git • GitHub • DevOps</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section sebagai ajakan untuk terhubung -->
+        <section id="contact" class="contact section">
+            <div class="container contact-box">
+                <p class="section-label">Contact</p>
+                <h2>Mari terhubung dan belajar bersama.</h2>
+                <p>
+                    Gunakan project ini sebagai dasar latihan praktikum, lalu kembangkan
+                    dengan identitas, project, dan link pribadi Anda.
+                </p>
+                <a href="mailto:mahasiswa@example.com" class="btn-secondary">mahasiswa@example.com</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer berisi copyright sederhana -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 CloudPortfolio. Dibuat untuk pembelajaran Cloud Computing dan DevOps Fundamentals.</p>
+        </div>
+    </footer>
+</body>
+</html>
